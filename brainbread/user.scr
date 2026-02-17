@@ -1,0 +1,121 @@
+// NOTE:  THIS FILE IS AUTOMATICALLY REGENERATED, 
+//DO NOT EDIT THIS HEADER, YOUR COMMENTS WILL BE LOST IF YOU DO
+// User options script
+//
+// Format:
+//  Version [float]
+//  Options description followed by 
+//  Options defaults
+//
+// Option description syntax:
+//
+//  "cvar" { "Prompt" { type [ type info ] } { default } }
+//
+//  type = 
+//   BOOL   (a yes/no toggle)
+//   STRING
+//   NUMBER
+//   LIST
+//
+// type info:
+// BOOL                 no type info
+// NUMBER       min max range, use -1 -1 for no limits
+// STRING       no type info
+// LIST          delimited list of options value pairs
+//
+//
+// default depends on type
+// BOOL is "0" or "1"
+// NUMBER is "value"
+// STRING is "value"
+// LIST is "index", where index "0" is the first element of the list
+
+
+// Half-Life User Info Configuration Layout Script (stores last settings chosen, too)
+// File generated:  Sat Aug 28 16:38:12 AM
+//
+//
+// Cvar	-	Setting
+
+VERSION 1.0
+
+DESCRIPTION INFO_OPTIONS
+{
+	"cl_blood"
+	{
+		"Blood level"
+		{ NUMBER 0.000000 3.000000 }
+		{ "3.000000" }
+	}
+	
+	"cl_help"
+	{
+		"Show ingame help"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_help_times"
+	{
+		"Nr. of times to show each help item"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"r_detailtextures"
+	{
+		"Show detailed world textures"
+		{ BOOL }
+		{ "1" }
+	}
+	
+	"cl_detailsprites"
+	{
+		"Show detailed sprites"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_decals"
+	{
+		"Multiplayer decal limit"
+		{ NUMBER 0.000000 4096.000000 }
+		{ "400.000000" }
+	}
+	
+	"cl_"
+	{
+		"BEBUG options, use only if the game"
+		{ LIST " keeps crashing!" "0" }
+		{ "" }
+	}
+	
+	"cl_partsys"
+	{
+		"Enable particle system"
+		{ BOOL }
+		{ "1" }
+	}
+	
+	
+	"cl_helpsys"
+	{
+		"Enable help system"
+		{ BOOL }
+		{ "1" }
+	}
+	
+	"cl_fadesys"
+	{
+		"Enable fader system"
+		{ BOOL }
+		{ "1" }
+	}
+	
+	"cl_fontsys"
+	{
+		"Enable font system"
+		{ BOOL }
+		{ "1" }
+	}
+}

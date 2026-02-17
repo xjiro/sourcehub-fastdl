@@ -1,0 +1,17 @@
+//ent name |  trigger on activate  | trigger on completion
+//----------------------------------------
+// RESERVED:
+// random
+// rescue
+// frags
+// fred
+// object
+defend - zombpart1
+moveon doorpart1 -
+object - doorpart2
+moveoncyb zombpart2 -
+support - zombpart3
+freddy cybdoors -
+fred - -
+frags - escapedoor
+escape - -

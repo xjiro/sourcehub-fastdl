@@ -1,0 +1,817 @@
+// NOTE:  THIS FILE IS AUTOMATICALLY REGENERATED, 
+//DO NOT EDIT THIS HEADER, YOUR COMMENTS WILL BE LOST IF YOU DO
+// Multiplayer options script
+//
+// Format:
+//  Version [float]
+//  Options description followed by 
+//  Options defaults
+//
+// Option description syntax:
+//
+//  "cvar" { "Prompt" { type [ type info ] } { default } }
+//
+//  type = 
+//   BOOL   (a yes/no toggle)
+//   STRING
+//   NUMBER
+//   LIST
+//
+// type info:
+// BOOL                 no type info
+// NUMBER       min max range, use -1 -1 for no limits
+// STRING       no type info
+// LIST          delimited list of options value pairs
+//
+//
+// default depends on type
+// BOOL is "0" or "1"
+// NUMBER is "value"
+// STRING is "value"
+// LIST is "index", where index "0" is the first element of the list
+
+
+// Half-Life Server Configuration Layout Script (stores last settings chosen, too)
+// File generated:  Thu Sep 18 07:32:23 PM
+//
+//
+// Cvar	-	Setting
+
+VERSION 1.0
+
+DESCRIPTION SERVER_OPTIONS
+{
+		"cl_placebo"
+	{
+		"#TTT_Header_DocInfo"
+		{ BOOL }
+		{ "0" }
+	}
+		"cl_placebo"
+	{
+		" "
+		{ BOOL }
+		{ "0" }
+	}
+	"cl_placebo"
+	{
+		"#TTT_Header_General"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"hostname"
+	{
+		"#Valve_Hostname"
+		{ STRING }
+		{ "TTT Classic Server" }
+	}
+
+	"maxplayers"
+	{
+		"#Valve_Max_Players"
+		{ NUMBER 1.000000 32.000000 }
+		{ "8.000000" }
+	}
+
+	"sv_password"
+	{
+		"#Valve_Server_Password"
+		{ STRING }
+		{ "" }
+	}
+
+	"sv_clienttrace"
+	{
+		"#TTT_sv_clienttrace"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "3.500000" }
+	}
+
+	"pausable"
+	{
+		"#TTT_pausable"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"sv_maxspeed"
+	{
+		"#TTT_sv_maxspeed"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "220.000000" }
+	}
+
+	"sv_spectatormaxspeed"
+	{
+		"#TTT_sv_spectatormaxspeed"
+		{ NUMBER 0.000000 1500.000000 }
+		{ "1500.000000" }
+	}
+
+	"mp_maxrounds"
+	{
+		"#TTT_mp_maxrounds"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "24.000000" }
+	}
+
+	"mp_timelimit"
+	{
+		"#TTT_mp_timelimit"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "30.000000" }
+	}
+
+	"mp_chattime"
+	{
+		"#TTT_mp_chattime"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "10.000000" }
+	}
+
+	"mp_footsteps"
+	{
+		"#Valve_Footsteps"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_flashlight"
+	{
+		"#Valve_Flashlight"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"cl_placebo_1"
+	{
+		"#TTT_Header_Mechanics"
+		{ BOOL }
+		{ "0" }
+	}
+	
+	"ttt_detective_mode"{
+		"#TTT_detective_mode"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_minimum_players"
+	{
+		"#TTT_minimum_players"
+		{ NUMBER 2.000000 32.000000 }
+		{ "4.000000" }
+	}
+
+	"ttt_preptime_seconds"
+	{
+		"#TTT_preptime_seconds"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "30.000000" }
+	}
+
+	"ttt_firstpreptime"
+	{
+		"#TTT_firstpreptime"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "60.000000" }
+	}
+
+	"ttt_haste"
+	{
+		"#TTT_haste"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_roundtime_minutes"
+	{
+		"#TTT_roundtime_minutes"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "10.000000" }
+	}
+
+	"ttt_haste_starting_minutes"
+	{
+		"#TTT_haste_starting_minutes"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "5.000000" }
+	}
+
+	"ttt_haste_minutes_per_death"
+	{
+		"#TTT_haste_minutes_per_death"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.500000" }
+	}
+
+	"ttt_posttime_seconds"
+	{
+		"#TTT_posttime_seconds"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "30.000000" }
+	}
+
+	"ttt_weapon_spawn_count"
+	{
+		"#TTT_weapon_spawn_count"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.000000" }
+	}
+
+	"ttt_spawn_wave_interval"
+	{
+		"#TTT_spawn_wave_interval"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.000000" }
+	}
+
+	"ttt_telefrag"
+	{
+		"#TTT_telefrag"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_enable_backstabs"
+	{
+		"#TTT_enable_backstabs"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_postround_ffa"
+	{
+		"#TTT_postround_ffa"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_pings"
+	{
+		"#TTT_pings"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "3" }
+	}
+
+	"ttt_ping_charge_time"
+	{
+		"#TTT_ping_charge_time"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "5.000000" }
+	}
+
+	"ttt_no_nade_throw_during_prep"
+	{
+		"#TTT_no_nade_throw_during_prep"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_dying_shot"
+	{
+		"#TTT_dying_shot"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_jump_spread_scale"
+	{
+		"#TTT_jump_spread_scale"
+		{ NUMBER 1.000000 10.000000 }
+		{ "3.000000" }
+	}
+
+	"cl_placebo_2"
+	{
+		"#TTT_Header_Roles"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_traitor_pct"
+	{
+		"#TTT_traitor_pct"
+		{ NUMBER 0.010000 0.900000 }
+		{ "0.250000" }
+	}
+
+	"ttt_traitor_max"
+	{
+		"#TTT_traitor_max"
+		{ NUMBER 0.000000 32.000000 }
+		{ "32.000000" }
+	}
+
+	"ttt_traitor_fuzziness"
+	{
+		"#TTT_traitor_fuzziness"
+		{ NUMBER 0.000000 1.000000 }
+		{ "0.200000" }
+	}
+	
+	"ttt_detective_pct"
+	{
+		"#TTT_detective_pct"
+		{ NUMBER 0.010000 0.900000 }
+		{ "0.130000" }
+	}
+
+	"ttt_detective_max"
+	{
+		"#TTT_detective_max"
+		{ NUMBER 0.000000 32.000000 }
+		{ "32.000000" }
+	}
+
+	"ttt_detective_min_players"
+	{
+		"#TTT_detective_min_players"
+		{ NUMBER 0.000000 32.000000 }
+		{ "8.000000" }
+	}
+
+	"ttt_detective_karma_min"
+	{
+		"#TTT_detective_karma_min"
+		{ NUMBER 0.000000 1000.000000 }
+		{ "600.000000" }
+	}
+
+	"cl_placebo_3"
+	{
+		"#TTT_Header_Karma"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_karma"
+	{
+		"#TTT_karma"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_karma_strict"
+	{
+		"#TTT_karma_strict"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_karma_starting"
+	{
+		"#TTT_karma_starting"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1000.000000" }
+	}
+
+	"ttt_karma_max"
+	{
+		"#TTT_karma_max"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1000.000000" }
+	}
+
+	"ttt_karma_kill_penalty"
+	{
+		"#TTT_karma_kill_penalty"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "15.000000" }
+	}
+
+	"ttt_karma_round_increment"
+	{
+		"#TTT_karma_round_increment"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "5.000000" }
+	}
+
+	"ttt_karma_clean_bonus"
+	{
+		"#TTT_karma_clean_bonus"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "30.000000" }
+	}
+
+	"ttt_karma_traitorkill_bonus"
+	{
+		"#TTT_karma_traitorkill_bonus"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "40.000000" }
+	}
+
+	"ttt_karma_traitordmg_ratio"
+	{
+		"#TTT_karma_traitordmg_ratio"
+		{ NUMBER 0.000000 1.000000 }
+		{ "0.000300" }
+	}
+
+	"ttt_karma_clean_half"
+	{
+		"#TTT_karma_clean_half"
+		{ NUMBER 0.000000 1.000000 }
+		{ "0.250000" }
+	}
+
+	"ttt_karma_ratio"
+	{
+		"#TTT_karma_ratio"
+		{ NUMBER 0.000000 1.000000 }
+		{ "0.001000" }
+	}
+
+	"ttt_karma_low_autokick"
+	{
+		"#TTT_karma_low_autokick"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_karma_low_amount"
+	{
+		"#TTT_karma_low_amount"
+		{ NUMBER 0.000000 1000.000000 }
+		{ "450.000000" }
+	}
+
+	"ttt_karma_low_ban"
+	{
+		"#TTT_karma_low_ban"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_karma_low_ban_minutes"
+	{
+		"#TTT_karma_low_ban_minutes"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "60.000000" }
+	}
+
+	"ttt_karma_persist"
+	{
+		"#TTT_karma_persist"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_karma_debugspam"
+	{
+		"#TTT_karma_debugspam"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"cl_placebo_4"
+	{
+		"#TTT_Header_Credits"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_credits_traitor_starting"
+	{
+		"#TTT_credits_traitor_starting"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "2.000000" }
+	}
+
+	"ttt_credits_traitor_kill"
+	{
+		"#TTT_credits_traitor_kill"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"ttt_credits_traitor_detkill"
+	{
+		"#TTT_credits_traitor_detkill"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"ttt_credits_traitor_alonebonus"
+	{
+		"#TTT_credits_traitor_alonebonus"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"ttt_credits_traitor_award_repeat"
+	{
+		"#TTT_credits_traitor_award_repeat"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_credits_traitor_award_killed_percent"
+	{
+		"#TTT_credits_traitor_award_killed_percent"
+		{ NUMBER 0.000000 1.000000 }
+		{ "0.350000" }
+	}
+
+	"ttt_credits_det_starting"
+	{
+		"#TTT_credits_det_starting"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"ttt_credits_det_traitor_kill"
+	{
+		"#TTT_credits_det_traitor_kill"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.000000" }
+	}
+
+	"ttt_credits_det_traitor_dead"
+	{
+		"#TTT_credits_det_traitor_dead"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"cl_placebo_5"
+	{
+		"#TTT_Header_VoiceChat"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_limit_spectator_voice"
+	{
+		"#TTT_limit_spectator_voice"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_limit_spectator_chat"
+	{
+		"#TTT_limit_spectator_chat"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_voice_max_distance"
+	{
+		"#TTT_voice_max_distance"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1024.000000" }
+	}
+
+	"ttt_voice_max_occ_thickness"
+	{
+		"#TTT_voice_max_occ_thickness"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "512.000000" }
+	}
+
+	"ttt_lastwords_chatprint"
+	{
+		"#TTT_lastwords_chatprint"
+		{ BOOL }
+		{ "0" }	
+	}
+
+	"ttt_voice_drain"
+	{
+		"#TTT_voice_drain"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_voice_drain_normal"
+	{
+		"#TTT_voice_drain_normal"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.200000" }
+	}
+
+	"ttt_voice_drain_admin"
+	{
+		"#TTT_voice_drain_admin"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.050000" }
+	}
+
+	"ttt_voice_drain_recharge"
+	{
+		"#TTT_voice_drain_recharge"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "0.050000" }
+	}
+
+	"cl_placebo_6"
+	{
+		"#TTT_Header_Misc"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_idle_limit"
+	{
+		"#TTT_idle_limit"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "180.000000" }
+	}
+
+	"ttt_announce_body_found"
+	{
+		"#TTT_announce_body_found"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_killer_dna_range"
+	{
+		"#TTT_killer_dna_range"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "550.000000" }
+	}
+
+	"ttt_killer_dna_lifetime"
+	{
+		"#TTT_killer_dna_lifetime"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "100.000000" }
+	}
+
+	"ttt_door_button_dna_lifetime"
+	{
+		"#TTT_door_button_dna_lifetime"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "30.000000" }
+	}
+
+	"ttt_crowbar_pushforce"
+	{
+		"#TTT_crowbar_pushforce"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "400.000000" }
+	}
+
+	"ttt_damage_own_health_station"
+	{
+		"#TTT_damage_own_health_station"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_detective_hats_reclaim"
+	{
+		"#TTT_detective_hats_reclaim"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_detective_hats_reclaim_any"
+	{
+		"#TTT_detective_hats_reclaim_any"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_playercolor_mode"
+	{
+		"#TTT_ttt_playercolor_mode"
+		{ NUMBER 0.000000 255.000000}
+		{ "1" }
+	}
+
+	"ttt_use_weapon_spawn_scripts"
+	{
+		"#TTT_ttt_use_weapon_spawn_scripts"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_detective_hats"
+	{
+		"#TTT_detective_hats"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_highlight_admins"
+	{
+		"#TTT_highlight_admins"
+		{ BOOL }
+		{ "1" }
+	}
+	
+	"ttt_corpse_carrying"
+	{
+		"#TTT_corpse_carrying"
+		{ BOOL }
+		{ "1" }
+	}
+	
+	"ttt_weapon_carrying"
+	{
+		"#TTT_weapon_carrying"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_damagelog_save"
+	{
+		"#TTT_damagelog_save"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_log_damage_for_console"
+	{
+		"#TTT_log_damage_for_console"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_placebo_7"
+	{
+		"#TTT_Header_SpecChicken"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_spec_chicken"
+	{
+		"#TTT_spec_chicken"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_spec_chicken_force"
+	{
+		"#TTT_spec_chicken_force"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "200.000000" }
+	}
+
+	"ttt_spec_chicken_base_bonus"
+	{
+		"#TTT_spec_chicken_base_bonus"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "8.000000" }
+	}
+
+	"ttt_spec_chicken_max_penalty"
+	{
+		"#TTT_spec_chicken_max_penalty"
+		{ NUMBER -100.000000 0.000000 }
+		{ "-6.000000" }
+	}
+
+	"ttt_spec_chicken_max_bonus"
+	{
+		"#TTT_spec_chicken_max_bonus"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "16.000000" }
+	}
+
+	"ttt_spec_chicken_recharge_time"
+	{
+		"#TTT_spec_chicken_recharge_time"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"ttt_spec_chicken_respawn_time"
+	{
+		"#TTT_spec_chicken_respawn_time"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "30.000000" }
+	}
+
+	"ttt_spec_chicken_enable_attack"
+	{
+		"#TTT_spec_chicken_enable_attack"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_spec_chicken_attack_damage"
+	{
+		"#TTT_spec_chicken_attack_damage"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "1.000000" }
+	}
+
+	"ttt_spec_chicken_noisemaker"
+	{
+		"#TTT_spec_chicken_noisemaker"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_spec_chicken_noisemaker_delay"
+	{
+		"#TTT_spec_chicken_noisemaker_delay"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "2.000000" }
+	}
+}

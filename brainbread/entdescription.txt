@@ -1,0 +1,223 @@
+BrainBread FGD Entities
+=======================
+Thanks to Jez for this!
+
+BB_SPAWN_ZOMBIE (POINT ENTITY)
+
+» Zombie spawn points (bb_spawn_zombie): the best idea is to set quite a few around,
+  and set the amount of live children to 3 at the maximum.
+
+» Marine Spawn points (bb_spawn_zombie): To create ally grunts, use the same entity
+  as the zombies, except change the monster to spawn to : monster_hgrunt for a normal
+  SMG carrying grunt or monster_hgrunt_shotgun for a shotgun carrying grunt. 
+
+It is usually best to only place a few marines at key points otherwise they will just
+over run the zombies which isnt really how the mod should play i dont think :S 
+
+
+BB_OBJECTIVES (POINT ENTITY)
+
+» Mission Objectives (bb_objectives): Place this entity anywhere were you want to spawn
+  a fred or a case (you can select in the case if either only the case or fred (or both)
+  should spawn at this place, the best idea is to place lots of these around the maps key
+  areas to vary the gameplay from round to round. Another entities which is linked to this
+  one is the...
+
+
+BB_MISSION_ZONE (FUNC_BRUSH ENTITY)
+
+» ...BB_MISSION_ZONE one. This is needed as a place to take the case to once the player
+  has picked it up. To create one of these, create a large brush where people will run
+  into with it. The best place for this is back at the main base of somewhere like that.
+  Once its created, tie it to the entity bb_mission_zone. This brush will then be invisible
+  in game and is the return place for the case. Its also a good idea to place a...
+
+
+PE_RADAR_MARK (POINT ENTITY)
+
+» ...pe_radar_mark in the middle of this brush, as this will show up as a white dot on the
+  radar, giving the player a clue where to go to drop the case off.
+
+===========================================================================================
+
+MAP ENDINGS
+
+» Map Endings: This is possibly the most tricky part of mapping for BB. It took me a while
+  to figure this out. Place a bb_escapeair somewhere on your map, preferably in the air,
+  and give it a name, for example bh1. Now place some waypoints, bb_waypoint. Name these
+  wp1, wp2 etc. Set the first stop target to wp1, then on that set the next stop target to
+  wp2 etc. until you get to your last wp and set that to wp1 again so it will loop. This
+  will make the blackhawk fly to these waypoints during the game when it is idle.
+  Now create a LARGE brush, and tie it to the entity bb_escape_final. This will also be
+  invisible once in game, but make sure that in anytime during the game, the blackhawk
+  will not come into contact with this brush. Now place a waypoint above this location,
+  one where you want the blackhawk to fly to once it has been called. You can set up a
+  chain of waypoints such as before or just a single one. Label the first waypoint of the
+  chain fin, or the waypoint you want it to fly to once the blackhawk has been called fin.
+  Now on the bb_escapeair entity, under rescue route start, set the target to fin or
+  whatever you called the rescue waypoint. Now your backhawk is setup, you have to set up
+  the means of calling it. Create a fake radio out of brushs, make sure u have a small bit
+  of it which you can tie to a func_button entity. Tie this button part to a func_button,
+  and set it up like you normally would a button but set its target to bh1 or whatever you
+  called your blackhawk. Now ingame on the last mission, after you push the button the
+  blackhawk should now come to the last waypoint. But you still have to add markers so the
+  player knows where to go.
+
+» Markers: bb_funk add this to the position of your custom created radio. Add 
+  bb_escape_radar to the position of your last blackhawk waypoint. This entity tells the
+  player where to go after the blackhawk has been called.
+
+MAPENDING (SIMPLE)
+If you active the "always active" flag in the bb_escape_final ent you'll always escape if
+you reach this zone. You can combine those things with your own mission. Seal the escape
+zone until the last mission has been completed (for example a door etc). After the door
+has been opened you are abel to escape.
+
+If you don't put in an Escapezone the round will be completed after the last mission.
+
+
+.TSK Missionfile
+================
+To get the missions to work, you must include a .tsk file with the same filename as your
+map. If you open a file such as bb_heavensgate.tsk it just has random random random random.
+This is telling the map what type of missions. 
+
+random ---> Either fetch the case, kill fred or kill a special amount of zombies; the last
+	    random mission always activates the escape mission, so you should always put
+	    random at the end of your tsk.file if you want ppl to escape!
+
+fred   ---> This triggers the fred mission
+
+case   ---> This triggers the case mission
+
+carnage --> This triggers the "kill amount of zombies" mission; the amount is related to
+            the player on the server
+
+Example:
+Your .tsk file includes the following content:
+
+random - -
+fred - -
+case - -
+carnage - -
+random - -
+
+The first "random" triggers a random mission (fred, case or carnage).
+The fred triggers the "kill fred" mission AFTER the first mission has been completed!
+The case triggers the "fetch the case" mission AFTER you killed fred.
+The carnage triggers the "kill amount of zombies" mission AFTER you completed the casemission!
+The last "random" triggers the "search the radio and order the helicopter" mission!
+
+
+"-" and "-" are targets for entities... example:
+
+fred door1 door2
+means, that with the beginning of the fred mission "door1" will be triggered and as soon as
+the fred mission is completed the entity "door2" will be triggered.
+
+You are also able to create your own mapmissions (take a look at the end of this document)!
+
+
+Misc.
+=====
+Zombies are VERY restricted in BB, so i reccomend leaving escape routes from WHEREVER you
+have placed zombie spawns. Zombies CANNOT do the following:
+
+Crouch
+Climb ladders
+
+These are very important factors when creating a map, as if you are having multiple layers,
+you must include ramps to each section, and these have to be full access ramps as the
+zombies cant crouch. This was the worst problem when i was creating my map.
+
+===========================================================================================
+
+Short information of those entities
+===========================================================================================
+
+bb_spawn_player: Player spawn
+bb_zombie_player: If you create a map with sealed sections you've to avoid, that zombie
+		  players spawn in those sections. Set 12 bb_zombie_players to force a
+		  zombified player to spawn there. If there are no bb_zombie_player ents
+		  in the map zombified players will spawn at the normal bb_spawn_zombie
+                  locations.
+
+bb_spawn_zombie: Monster spawn (also used for zombie players and marines)
+              
+pe_radar_mark: A white point on the radar
+
+pe_light: Lightsource for the lensflare effect
+pe_light_ref: Referenceposition for the lensflare effect
+
+mapobject_npc_crow: A Crow
+mapobject_jaguar: A jaguar (car)
+
+pe_objectclip: Mapobjects clip brush for cars or trees/models
+pe_rain: Rain area
+
+bb_equipment: BrainBread equipment item (weapons):
+        weapon_ak47
+	weapon_benelli
+	weapon_beretta
+	weapon_beretta_a
+	weapon_deagle
+	weapon_glock
+	weapon_glock_auto_a
+	weapon_m16
+	weapon_microuzi
+	weapon_microuzi_a
+	weapon_minigun
+	weapon_mp5
+	weapon_flame
+	weapon_p225
+	weapon_stoner
+	weapon_tavor
+	weapon_usp
+	weapon_sawed
+	weapon_knife (the axe)
+Additional: (doesn't have a world model)
+	weapon_hand
+
+
+bb_mapmission: A blinking yellow point on the radar.
+Target must be the same as the name of the mission
+entity in order to get activated.
+
+bb_custommission: The custom mission entity. Self
+explaining. A mission is completed as soon as the
+entity is triggered (if it's activated).
+The missions are defined in:
+"brainbread/maps/<mapname>.tsk".
+"random" means that a random builtin mission is
+used, any other value names the entity which gets
+activated as soon as the previous mission is
+completet. The last mission in the file ends the
+round. If "random" is the last entry it will be the
+rescue mission.
+
+bb_funk: Position of the radio for the last mission
+
+bb_escape_radar: Position of the final ecapezone
+
+bb_healthkit: BrainBread healthkit
+
+bb_objectives: Spawn spot for mission items (case/
+fred). Of all the bb_objectives in the map one will
+be chosen randomly per mission.
+
+bb_ammo: BrainBread ammo item 
+
+bb_tank: Tank
+bb_escapeair: BlackHawk (needed for the last builtin
+mission.
+
+bb_waypoint: Tank/BlackHawk waypoint
+
+bb_mission_zone: A BrainBread mission zone. (Case
+delivery).
+
+bb_escape_final: The final helicopter escape zone
+for the humans.
+============================================================================
+____________________________________________________________________________
+(c)2005 - IronOak studios

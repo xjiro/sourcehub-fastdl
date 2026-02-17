@@ -1,0 +1,22 @@
+BRAINBREAD ---  SLAYWATCH  ---  LAST MAN STANDING MODE
+
+Don't join the horde! With every infected oponent the remaining uninfected
+will get a bonus of 20% hitpoints, speed and damage.
+
+The LAST MAN STANDING wins!
+
+Your mission as a human:
+Some survivors and soldiers are trapped in the mall. They built up some 
+barricades before the horde entered the building, but the only way out is via
+helicopter! The Army won't bring the effort to save you, though, if you don't
+return the favor. So here are your tasks:
+
+A) Defend the barricades for a couple of minutes.
+
+B) Kill some zombies to calm down the situation.
+
+C) Search and kill FRED, a mutated zombie. The army wants to analyze its DNA.
+
+D) Retrieve the case with valuable information about this epidemy.
+
+E) Use the radio at the barricades to order the helicopter and - finally - escape.

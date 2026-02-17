@@ -1,0 +1,119 @@
+//  'C' conrete (Concrete is the default)
+//  'M' metal
+//  'V' ventillation
+//  'D' dirt
+//  'S' slosh liquid 
+//  'T' tile
+//  'G' grate
+//  'W' wood
+//  'P' computer
+//  'Y' glass
+//  'N' snow
+//  'X' grass
+//  'R' gravel
+//  'O' organic
+
+N sphinx_snow_1
+
+W babtech_dr1c
+W cardboard_1
+W cardboard_2
+W cardboard_3
+W cardboard_4
+W crate3_1
+W crate3_1d
+W crate3_2
+W cutegf_2
+W door_2
+W fifties_dr1k
+W fifties_dsk1
+W freezer_bx7
+W of_crate01a
+W of_crate01b
+W of_crate01d
+W of_crate02a
+W of_crate02b
+W painting11
+W painting3
+W painting7
+W pfab_trsh1a
+W pfab_trsh1b
+W pfab_trsh1c
+W pfab_trsh1d
+W picture5
+W picture8
+W poster13
+W poster14
+W sphinx_desk_2
+W wood_1
+W wood2_1
+
+M 0~elev2_pan
+M 0elev_down2
+M ammo01
+M ammo02
+M apc_back1
+M apc_btile1
+M apc_frnt1
+M apc_side1
+M c1a1_dr2
+M clock2a
+M door_3
+M elev1_trim
+M elev2_dr_sp
+M exit1
+M file1_sp
+M file1b_sp
+M file2_sp
+M generic105_sp
+M generic44
+M generic46
+M generic89a_sp
+M of_crate03a
+M of_crate03b
+M of_crate03c
+M of_crate03d
+M of_crate03top
+M poster15
+M poster18
+M sign13
+M sign29
+M sign31
+M sign73
+M sphinx_board_1
+M sphinx_garage_1
+M ventlab1
+M warehousedoor
+M xcrate10c
+M xcrate10d
+
+R asphalt_1
+
+V generic105
+V generic105a
+V generic105b
+
+P 0~lab_crt1
+P 3~lab_crt2
+P comp_1
+P comp_2
+P generic108
+P generic108a
+P generic110
+P generic120
+P lab1_comp3c
+P sphinx_comp_4d
+P sphinx_mon_1
+P sphinx_mon_2
+P sphinx_mon_3
+P sphinx_mon_4
+P sphinx_mon_5
+
+Y 0~fifts_lght01
+Y generic45
+Y lab1_map1
+Y lab1_map2
+Y light3c
+Y M glass_med
+Y spotred
+Y spotyellow

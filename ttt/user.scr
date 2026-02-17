@@ -1,0 +1,363 @@
+// NOTE:  THIS FILE IS AUTOMATICALLY REGENERATED, 
+//DO NOT EDIT THIS HEADER, YOUR COMMENTS WILL BE LOST IF YOU DO
+// User options script
+//
+// Format:
+//  Version [float]
+//  Options description followed by 
+//  Options defaults
+//
+// Option description syntax:
+//
+//  "cvar" { "Prompt" { type [ type info ] } { default } }
+//
+//  type = 
+//   BOOL   (a yes/no toggle)
+//   STRING
+//   NUMBER
+//   LIST
+//
+// type info:
+// BOOL                 no type info
+// NUMBER       min max range, use -1 -1 for no limits
+// STRING       no type info
+// LIST          delimited list of options value pairs
+//
+//
+// default depends on type
+// BOOL is "0" or "1"
+// NUMBER is "value"
+// STRING is "value"
+// LIST is "index", where index "0" is the first element of the list
+
+
+// Half-Life User Info Configuration Layout Script (stores last settings chosen, too)
+// File generated:  Thu Sep 18 00:44:20 AM
+//
+//
+// Cvar	-	Setting
+
+VERSION 1.0
+
+DESCRIPTION INFO_OPTIONS
+{
+	"cl_placebo"
+	{
+		"=========== Gameplay + Language ============"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_language"
+	{
+		"#TTT_Language"
+		{
+			LIST
+			"English" "0"
+			"Português (Brasil)" "1"
+		}
+		{ "0.000000" }
+	}
+
+	"ttt_spectator_mode"
+	{
+		"#TTT_SpectatorMode"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"dna_auto"
+	{
+		"#TTT_DnaAutoScan"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"radar_auto"
+	{
+		"#TTT_RadarAuto"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_game_event_time"
+	{
+		"#TTT_GameEventTime"
+		{ NUMBER 0.000000 60.000000 }
+		{ "12.000000" }
+	}
+
+	"ttt_tutorial_enable"
+	{
+		"#TTT_tutorial_enable"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_tutorial_duration"
+	{
+		"#TTT_tutorial_duration"
+		{ NUMBER 1.000000 60.000000 }
+		{ "15.000000" }
+	}
+
+	"ttt_tutorial_reset"
+	{
+		"#TTT_tutorial_reset"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_avoid_detective"
+	{
+		"#TTT_AvoidDetective"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"cl_placebo"
+	{
+		"============== General + View =============="
+		{ BOOL }
+		{ "0" }
+	}
+
+	"mp_decals"
+	{
+		"#Valve_Multiplayer_Decal_Limit"
+		{ NUMBER 0.000000 4096.000000 }
+		{ "300.000000" }
+	}
+
+	"default_fov"
+	{
+		"#Valve_DefaultFOV"
+		{ NUMBER 1.000000 179.000000 }
+		{ "90.000000" }
+	}
+
+	"cl_righthand"
+	{
+		"#TTT_RightHand"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_rollangle"
+	{
+		"#Valve_ViewRollAngle"
+		{ NUMBER 0.000000 360.000000 }
+		{ "2.000000" }
+	}
+
+	"cl_rollspeed"
+	{
+		"#Valve_ViewRollSpeed"
+		{ NUMBER 0.000000 -1.000000 }
+		{ "200.000000" }
+	}
+
+	"cl_bobtilt"
+	{
+		"#Valve_ViewBobTilt"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"cl_placebo"
+	{
+		"=============== HUD + UI ==============="
+		{ BOOL }
+		{ "0" }
+	}
+
+	"hud_fastswitch"
+	{
+		"#TTT_FastWeaponSwitch"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_weaponswitcher_displayfast"
+	{
+		"#TTT_WeaponSwitcherDisplayFast"
+		{ BOOL }
+		{ "1" }
+	}
+
+	
+	"ttt_weaponswitcher_showtime"
+	{
+		"#TTT_WeaponSwitcherShowTime"
+		{ NUMBER 0.000000 10.000000 }
+		{ "3.000000" }
+	}
+
+	"ttt_weaponswitcher_always_show"
+	{
+		"#TTT_WeaponSwitcherAlwaysShow"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"hud_drawhistory_time"
+	{
+		"#TTT_HudHistoryTime"
+		{ NUMBER 0.000000 30.000000 }
+		{ "5.000000" }
+	}
+
+	"ttt_minimal_targetid"
+	{
+		"#TTT_MinimalTargetId"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_health_label"
+	{
+		"#TTT_HealthLabel"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_tips_enable"
+	{
+		"#TTT_TipsLabel"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_hud_inset_x"
+	{
+		"#TTT_HudInsetXLabel"
+		{NUMBER 0.000000 8000.0 }
+		{ "0.000000" }
+	}
+
+	"ttt_hud_inset_y"
+	{
+		"#TTT_HudInsetYLabel"
+		{NUMBER 0.000000 8000.0 }
+		{ "0.000000" }
+	}
+
+	"ttt_enable_pings"
+	{
+		"#TTT_EnablePings"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_enable_ping_sounds"
+	{
+		"#TTT_EnablePingSounds"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_placebo"
+	{
+		"=============== Crosshair ================"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_disable_crosshair"
+	{
+		"#TTT_DisableCrosshair"
+		{ BOOL }
+		{ "0" }
+	}
+	
+	"ttt_dynamic_crosshair"
+	{
+		"#TTT_DynamicCrosshair"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_crosshair_color_enable"
+	{
+		"#TTT_CustomCrosshairColor"
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_crosshair_color_r"
+	{
+		"#TTT_CrosshairColorRed"
+		{ NUMBER 0.000000 255.000000 }
+		{ "0.000000" }
+	}
+
+	"ttt_crosshair_color_g"
+	{
+		"#TTT_CrosshairColorGreen"
+		{ NUMBER 0.000000 255.000000 }
+		{ "255.000000" }
+	}
+
+	"ttt_crosshair_color_b"
+	{
+		"#TTT_CrosshairColorBlue"
+		{ NUMBER 0.000000 255.000000 }
+		{ "0.000000" }
+	}
+
+	"ttt_crosshair_opacity"
+	{
+		"#TTT_CrosshairOpacity"
+		{ NUMBER 0.000000 100.000000 }
+		{ "100.000000" }
+	}
+
+	"ttt_crosshair_size"
+	{
+		"#TTT_CrosshairSize"
+		{ NUMBER 0.100000 3.000000 }
+		{ "1.000000" }
+	}
+
+	"ttt_crosshair_thickness"
+	{
+		"#TTT_CrosshairThickness"
+		{ NUMBER 1.000000 10.000000 }
+		{ "1.000000" }
+	}
+
+	"cl_placebo"
+	{
+		"================ Sound ================="
+		{ BOOL }
+		{ "0" }
+	}
+
+	"ttt_mute_team"
+	{
+		"#TTT_MuteTeam"
+		{
+			LIST
+			"#TTT_MuteNobody" "0"
+			"#TTT_MuteLiving" "1"
+			"#TTT_MuteAll" "2"
+			"#TTT_MuteSpectators" "3"
+		}
+		{ "0" }
+	}
+
+	"ttt_msg_soundcue"
+	{
+		"#TTT_MsgSoundCue"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ttt_soundcues"
+	{
+		"#TTT_SoundCues"
+		{ BOOL }
+		{ "0" }
+	}
+
+}

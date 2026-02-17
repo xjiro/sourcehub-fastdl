@@ -1,0 +1,346 @@
+// Menus
+Title_SelectYourModel
+{
+Select your character and read the mission briefing
+}
+
+InstaChange
+{
+\rP-U-B-L-I-C     E-N-E-M-Y
+\t
+\yDo you want to change your
+\yteam now or next round?
+\t
+\t
+\w1. Next round
+\t
+\w2. Now
+}
+
+Radio1
+{
+\rRadio commands menu one:
+\t
+\t
+\w1. Attack the enemy!
+\w2. Cover me!
+\w3. Advance!
+\w4. Stay together!
+\w5. Complete the mission target!
+\w6. Retreat!
+\w7. Incoming!
+\w8. Waiting for orders!
+\t
+\t
+\w0. Exit
+}
+
+Radio2
+{
+\rRadio commands menu two:
+\t
+\t
+\w1. Cease fire!
+\w2. Open fire!
+\w3. I'm hit!
+\w4. Need assistance!
+\w5. Hold and defend this position!
+\w6. Follow me!
+\w7. Out of ammunition!
+\w8. In position!
+\t
+\t
+\w0. Exit
+}
+
+Radio3
+{
+\rRadio commands menu three:
+\t
+\t
+\w1. Attention!
+\w2. Ambush!
+\w3. Granade!
+\w4. Sniper!
+\w5. Roger that!
+\w6. Negative!
+\w7. Teammate down!
+\t
+\t
+\w0. Exit
+}
+
+Empty
+{
+\t
+}
+// Spectator
+Spec_Mode1
+{
+Locked Chase-Camera Mode
+}
+
+Spec_Mode2
+{
+Free Chase-Camera Mode
+}
+
+Spec_Mode3
+{
+Free Roaming Mode
+}
+
+Spec_Mode4
+{
+First Person Mode
+}
+
+Spec_NoTarget
+{
+No valid targets. Cannot switch to Chase-Camera Mode.
+}
+
+Spec_Help
+{
+FIRE for Next Target  ALT-FIRE for Prev Target  JUMP to Change Modes
+}
+
+Spec_Help2
+{
+Your text messages can only be seen by other Spectators
+}
+
+// Scoreboard
+Spectators
+{
+Spectators
+}
+
+Unassigned
+{
+Unassigned
+}
+
+// Scoreboard
+TEAMS
+{
+Teams
+}
+
+PLAYERS
+{
+Players
+}
+
+PLAYER
+{
+Player
+}
+
+CLASS
+{
+Status
+}
+
+SCORE
+{
+Score
+}
+
+DEATHS
+{
+Deaths
+}
+
+LATENCY
+{
+Ping
+}
+
+VOICE
+{
+Voice
+}
+
+Menu_OK
+{
+OK
+}
+
+Menu_Cancel
+{
+CANCEL
+}
+
+Menu_Spectate
+{
+SPECTATE
+}
+
+version
+{
+ALPHA 5
+}
+
+
+// SDK 2.0 Spectator Menu
+
+Spec_Mode1
+{
+Locked Chase-Camera
+}
+
+Spec_Mode2
+{
+Free Chase-Camera
+}
+
+Spec_Mode3
+{
+Free-Look
+}
+
+Spec_Mode4
+{
+First Person
+}
+
+Spec_Mode5
+{
+Free Map Overview
+}
+
+Spec_Mode6
+{
+Chase Map Overview
+}
+
+Spec_NoTarget
+{
+No valid targets. Cannot switch to Chase-Camera Mode.
+}
+
+Spec_Help_Title
+{
+Spectator Mode
+}
+
+Spec_Help_Text
+{
+Use the following keys to change view styles:
+
+ FIRE1 - Chase next player
+ FIRE2 - Chase previous player
+ JUMP - Change view modes
+ USE - Change inset window mode
+ 
+ DUCK  - Enable spectator menu
+  
+In Overview Map Mode move around with:
+
+ MOVELEFT - move left
+ MOVERIGHT - move right
+ FORWARD - zoom in
+ BACK - zoom out
+ MOUSE - rotate around map/target
+}
+
+Spec_Slow_Motion
+{
+Slow Motion
+}
+
+Spec_Replay
+{
+Instant Replay
+}
+
+Spec_Auto
+{
+Auto
+}
+
+Spec_Time
+{
+Time
+}
+
+Spec_Map
+{
+Map
+}
+
+Spectators
+{
+Spectators
+}
+
+Unassigned
+{
+Unassigned
+}
+
+Spec_Duck
+{
+Press DUCK for Spectator Menu
+}
+
+Muted
+{
+You have muted %s.
+}
+
+Unmuted
+{
+You have unmuted %s.
+}
+
+No_longer_hear_that_player
+{
+You will no longer hear that player speak.
+}
+
+OBS_NONE
+{
+Camera Options
+}
+
+OBS_CHASE_LOCKED
+{
+Locked Chase-Cam
+}
+
+OBS_CHASE_FREE
+{
+Free Chase-Cam
+}
+
+OBS_ROAMING
+{
+Roaming
+}
+
+OBS_IN_EYE
+{
+First Person
+}
+
+OBS_MAP_FREE
+{
+Free Overview
+}
+
+OBS_MAP_CHASE
+{
+Chase-Cam Overview
+}
+
+SPECT_OPTIONS
+{
+Options
+}
+
+CAM_OPTIONS
+{
+Camera Options
+}

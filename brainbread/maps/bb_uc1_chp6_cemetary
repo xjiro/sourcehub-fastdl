@@ -1,0 +1,31 @@
+// bb_cemetary_b3.res - created with RESGen v1.00
+// RESGen is made by Jeroen "ShadowLord" Bogers
+// URL: http://www.unitedadmins.com/mapRESGEN.asp
+// Res creation date, GMT timezone (dd-mm-yyyy): 04-01-2005
+
+// .res entries (in alphabetical order for no good reason!)
+gfx/env/bb_cemetarybk.tga
+gfx/env/bb_cemetarydn.tga
+gfx/env/bb_cemetaryft.tga
+gfx/env/bb_cemetarylf.tga
+gfx/env/bb_cemetaryrt.tga
+gfx/env/bb_cemetaryup.tga
+maps/bb_cemetary_b3.txt
+maps/bb_cemetary_b3.tsk
+models/cemetary/cemtree1.mdl
+models/cemetary/cemtree2.mdl
+models/cemetary/grave01.mdl
+models/cemetary/grave02.mdl
+models/cemetary/grave03.mdl
+models/cemetary/grave04.mdl
+models/cemetary/grave05.mdl
+models/cemetary/watertower.mdl
+sound/ambience/wind2.wav
+sound/cemetary/bell.wav
+sound/cemetary/bell15mins.wav
+sound/cemetary/bell30mins.wav
+sound/cemetary/crickets.wav
+sound/cemetary/fightmusic.wav
+sound/cemetary/fightblank.wav
+sprites/flare1.spr
+sprites/glow01.spr

@@ -1,0 +1,178 @@
+//1024x768 text scheme file
+
+// DEFAULT BUTTON TEXT
+SchemeName = "Primary Button Text"
+FontName = "Arial"
+FontSize = 23
+FgColor = "255 170 0 255"
+BgColor = "0 0 0 141"
+FgColorArmed = "255 255 255 255"
+BgColorArmed = "255 170 0 67"
+
+// COMMAND MENU TEXT
+SchemeName = "CommandMenu Text"
+FontName = "Arial"
+FontSize = 21
+FgColor = "255 170 0 255"
+BgColor = "0 0 0 141"
+FgColorArmed = "255 255 255 255"
+BgColorArmed = "255 170 0 67"
+
+// SCOREBOARD TEXT
+SchemeName = "Scoreboard Text"
+FontName = "Arial"
+FontSize = 18
+FontWeight = 0
+
+// SCOREBOARD TITLE TEXT (team names, team scores)
+SchemeName = "Scoreboard Title Text"
+FontName = "Arial"
+FontSize = 24
+FontWeight = 700
+
+// SCOREBOARD LARGE TEXT (team names, team scores)
+SchemeName = "Scoreboard Large Title Text"
+FontName = "Arial"
+FontSize = 30
+FontWeight = 900
+
+// SCOREBOARD SMALL TEXT (headers, player #)
+SchemeName = "Scoreboard Small Text"
+FontName = "Arial"
+FontSize = 14
+FontWeight = 0
+
+// TITLE FONT in TFC selection menus
+SchemeName = "Title Font"
+FontName = "Arial"
+FontSize = 34
+FgColor = "255 170 0 255"
+
+// CLASSDESC, MAPDESC, MOTD text windows
+SchemeName = "Briefing Text"
+FontName = "Arial"
+FontSize = 18
+FontWeight = 0
+FgColor = "255 170 0 255"
+
+// Team info text (list of players, etc)
+// fgColor is automatically set to the teams color
+SchemeName = "Team Info Text"
+FontName = "Arial"
+FontSize = 18
+FontWeight = 0
+
+SchemeName = "Game Phase"
+FontName = "Tahoma MS"
+FontSize = 28
+FontWeight = 1000
+
+SchemeName = "Haste Mode"
+FontName = "Tahoma MS"
+FontSize = 13
+FontWeight = 700
+
+SchemeName = "Tip Button"
+FontName = "Tahoma MS"
+FontSize = 20
+FontWeight = 700
+
+SchemeName = "Bar Text"
+FontName = "Tahoma MS"
+FontSize = 24
+FontWeight = 750
+
+SchemeName = "Time Text"
+FontName = "Tahoma MS"
+FontSize = 24
+FontWeight = 800
+
+SchemeName = "Weapon Slot"
+FontName = "Tahoma MS"
+FontSize = 17
+FontWeight = 900
+
+SchemeName = "Overtime Text"
+FontName = "Tahoma MS"
+FontSize = 14
+FontWeight = 700
+
+SchemeName = "TargetID"
+FontName = "Verdana"
+FontSize = 18
+FontWeight = 700
+
+SchemeName = "TargetIDSmall"
+FontName = "Verdana"
+FontSize = 16
+FontWeight = 700
+
+SchemeName = "UI Text XL"
+FontName = "Tahoma MS"
+FontSize = 28
+FontWeight = 700
+
+SchemeName = "UI Text Title"
+FontName = "Tahoma MS"
+FontSize = 20
+FontWeight = 700
+
+SchemeName = "UI Text Small Bold"
+FontName = "Tahoma MS"
+FontSize = 14
+FontWeight = 600
+
+SchemeName = "UI Text"
+FontName = "Tahoma MS"
+FontSize = 16
+FontWeight = 500
+
+SchemeName = "UI Text Bold"
+FontName = "Tahoma MS"
+FontSize = 16
+FontWeight = 600
+
+SchemeName = "UI Text Small"
+FontName = "Tahoma MS"
+FontSize = 14
+FontWeight = 700
+
+SchemeName = "UI Text Huge"
+FontName = "Tahoma MS"
+FontSize = 72
+FontWeight = 1000
+
+SchemeName = "PickupText"
+FontName = "Verdana"
+FontSize = 13
+FontWeight = 700
+
+SchemeName = "RadarText"
+FontName = "Verdana"
+FontSize = 12
+FontWeight = 600
+
+SchemeName = "TTT Scoreboard Text"
+FontName = "Verdana"
+FontSize = 16
+FontWeight = 700
+
+SchemeName = "TTT Scoreboard Title Text"
+FontName = "Arial"
+FontSize = 24
+FontWeight = 700
+
+SchemeName = "TTT Scoreboard Large Title Text"
+FontName = "Arial"
+FontSize = 30
+FontWeight = 900
+
+SchemeName = "TTT Scoreboard Small Text"
+FontName = "Tahoma MS"
+FontSize = 16
+FontWeight = 900
+
+SchemeName = "TTT Scoreboard XSmall Text"
+FontName = "Verdana"
+FontSize = 13
+FontWeight = 400
