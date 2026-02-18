@@ -1,0 +1,47 @@
+'s' steht für Sonderzeichen. Die ersten chars sind damit markiert, da sie sonst falsch geparsed würden.
+Hier die Liste & formatbeschreibung:
+
+Die Zahl ganz am Anfang der Datei ist die Schriftgrösse (höhe der Zeichen in pixel)
+Jede weitere Zeile:
+1. Wert: das Zeichen selbst, muss nicht zwingend stimmen, ist nur ne unterstützung beim werte überarbeiten
+2. Wert: Die Zeile im bitmap (da es höchstens 256 pixel breit ist, müssen die Buchstaben auf zeilen mit abstand "grösse" unterteilt werden)
+3. Wert: Die Breite des aktuellen Zeichens.
+
+WICHTIG:
+- Die Reihenfolge ist zwingend einzuhalten, da die Zeichen am anfang nicht mit eingelesen werden.
+- Die buchstaben dürfen sich nicht überschneiden, sonst geht die x-positions berechnung nicht auf. (x-pos von zeichen A = x-pos von A-1 + breite von A-1)
+- Die Zeilennummerierung fängt bei 0 an
+
+13
+! 0 4
+" 0 7
+# 0 9
+$ 0 9
+% 0 11
+& 0 10
+' 0 3
+( 0 6
+) 0 6
+* 0 7
++ 0 9
+, 0 3
+- 0 6
+. 0 4
+/ 0 9
+0 0 9
+1 0 6
+2 0 8
+3 0 7
+4 0 9
+5 0 8
+6 0 9
+7 0 8
+8 0 8
+9 0 9
+: 0 4
+; 0 4
+< 0 11
+= 0 8
+> 0 10
+? 0 8
+@ 0 12
