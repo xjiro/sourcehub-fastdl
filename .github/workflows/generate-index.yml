@@ -2,7 +2,7 @@ name: Generate file_index.json
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
 
 permissions:
